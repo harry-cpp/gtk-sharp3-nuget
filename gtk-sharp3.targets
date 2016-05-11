@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <Target Name="CopyDLLCondigFiles" AfterTargets="AfterBuild">
+    <Target Name="CopyGtk3ConfigFiles" AfterTargets="AfterBuild">
         <CreateItem Include="$(MSBuildThisFileDirectory)\*.config">
-            <Output TaskParameter="Include" ItemName="DLLCondigFiles" />
+            <Output TaskParameter="Include" ItemName="Gtk3ConfigFiles" />
         </CreateItem>
-        <Copy SourceFiles="@(DLLCondigFiles)" DestinationFiles="@(DLLCondigFiles->'$(OutDir)\%(Filename)%(Extension)')" />
+        <Copy SourceFiles="@(Gtk3ConfigFiles)" DestinationFiles="@(Gtk3ConfigFiles->'$(OutDir)\%(Filename)%(Extension)')" />
     </Target>
 </Project>

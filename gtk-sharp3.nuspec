@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
     <metadata>
         <id>gtk-sharp3</id>
-        <version>3.18.0.0</version>
+        <version>3.20.4.0</version>
         <title>gtk-sharp3</title>
         <authors>cra0zy</authors>
         <licenseUrl>https://github.com/openmedicus/gtk-sharp/blob/master/COPYING</licenseUrl>
         <projectUrl>https://github.com/cra0zy/gtk-sharp3-nuget</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Gtk# is a .NET language binding for the GTK+ toolkit and assorted GNOME libraries. Gtk# is free software, licensed under the GNU LGPL.</description>
-        <summary>Gtk 3.18 C# bindings.</summary>
+        <summary>Gtk 3.20 C# bindings.</summary>
         <releaseNotes></releaseNotes>
         <copyright>Copyright 2016</copyright>
         <language>en-US</language>
