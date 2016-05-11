@@ -1,0 +1,3 @@
+[submodule "gtk-sharp"]
+	path = gtk-sharp
+	url = https://github.com/openmedicus/gtk-sharp.git

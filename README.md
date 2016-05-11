@@ -1,2 +1,5 @@
 # gtk-sharp3-nuget
-gtk-sharp 3 nuget package
+This reposetory contains the source for gtk-sharp3 nuget package. To build it localy simply do:
+```sh
+sh generate.sh
+```

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+    <metadata>
+        <id>gtk-sharp3</id>
+        <version>3.18.0.0</version>
+        <title>gtk-sharp3</title>
+        <authors>cra0zy</authors>
+        <licenseUrl>https://github.com/openmedicus/gtk-sharp/blob/master/COPYING</licenseUrl>
+        <projectUrl>https://github.com/cra0zy/gtk-sharp3-nuget</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Gtk# is a .NET language binding for the GTK+ toolkit and assorted GNOME libraries. Gtk# is free software, licensed under the GNU LGPL.</description>
+        <summary>Gtk 3.18 C# bindings.</summary>
+        <releaseNotes></releaseNotes>
+        <copyright>Copyright 2016</copyright>
+        <language>en-US</language>
+    </metadata>
+    <files>
+        <file src="gtk-sharp/atk/atk-sharp.dll" target="lib/net40/atk-sharp.dll" />
+        <file src="gtk-sharp/atk/atk-sharp.dll.config" target="build/net40/atk-sharp.dll.config" />
+        <file src="gtk-sharp/cairo/cairo-sharp.dll" target="lib/net40/cairo-sharp.dll" />
+        <file src="gtk-sharp/gdk/gdk-sharp.dll" target="lib/net40/gdk-sharp.dll" />
+        <file src="gtk-sharp/gdk/gdk-sharp.dll.config" target="build/net40/gdk-sharp.dll.config" />
+        <file src="gtk-sharp/gio/gio-sharp.dll" target="lib/net40/gio-sharp.dll" />
+        <file src="gtk-sharp/gio/gio-sharp.dll.config" target="build/net40/gio-sharp.dll.config" />
+        <file src="gtk-sharp/glib/glib-sharp.dll" target="lib/net40/glib-sharp.dll" />
+        <file src="gtk-sharp/glib/glib-sharp.dll.config" target="build/net40/glib-sharp.dll.config" />
+        <file src="gtk-sharp/gtk/gtk-sharp.dll" target="lib/net40/gtk-sharp.dll" />
+        <file src="gtk-sharp/gtk/gtk-sharp.dll.config" target="build/net40/gtk-sharp.dll.config" />
+        <file src="gtk-sharp/gtkdotnet/gtk-dotnet.dll" target="lib/net40/gtk-dotnet.dll" />
+        <file src="gtk-sharp/gtkdotnet/gtk-dotnet.dll.config" target="build/net40/gtk-dotnet.dll.config" />
+        <file src="gtk-sharp/pango/pango-sharp.dll" target="lib/net40/pango-sharp.dll" />
+        <file src="gtk-sharp/pango/pango-sharp.dll.config" target="build/net40/pango-sharp.dll.config" />
+        <file src="gtk-sharp3.targets" target="build/net40/gtk-sharp3.targets" />
+    </files>
+</package>
