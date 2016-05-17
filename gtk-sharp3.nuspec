@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
     <metadata>
         <id>gtk-sharp3</id>
-        <version>3.20.4.0</version>
+        <version>3.20.4.2</version>
         <title>gtk-sharp3</title>
         <authors>cra0zy</authors>
         <licenseUrl>https://github.com/openmedicus/gtk-sharp/blob/master/COPYING</licenseUrl>
