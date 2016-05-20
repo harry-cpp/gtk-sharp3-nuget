@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <Target Name="CopyGtk3ConfigFiles" AfterTargets="AfterBuild">
-        <CreateItem Include="$(MSBuildThisFileDirectory)\*.config">
+        <CreateItem Include="$(MSBuildThisFileDirectory)\net40\*.config">
             <Output TaskParameter="Include" ItemName="Gtk3ConfigFiles" />
         </CreateItem>
+        <CreateItem Include="$(MSBuildThisFileDirectory)\x86\*">
+            <Output TaskParameter="Include" ItemName="Gtk3Nativex86" />
+        </CreateItem>
+        <CreateItem Include="$(MSBuildThisFileDirectory)\x64\*">
+            <Output TaskParameter="Include" ItemName="Gtk3Nativex64" />
+        </CreateItem>
+        
         <Copy SourceFiles="@(Gtk3ConfigFiles)" DestinationFiles="@(Gtk3ConfigFiles->'$(OutDir)\%(Filename)%(Extension)')" />
+        <Copy SourceFiles="@(Gtk3Nativex86)" DestinationFiles="@(Gtk3Nativex86->'$(OutDir)\x86\%(Filename)%(Extension)')" />
+        <Copy SourceFiles="@(Gtk3Nativex64)" DestinationFiles="@(Gtk3Nativex64->'$(OutDir)\x64\%(Filename)%(Extension)')" />
     </Target>
 </Project>
