@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
     <metadata>
         <id>gtk-sharp3</id>
-        <version>3.20.4.3</version>
+        <version>3.22.0.0</version>
         <title>gtk-sharp3</title>
         <authors>cra0zy</authors>
         <licenseUrl>https://github.com/openmedicus/gtk-sharp/blob/master/COPYING</licenseUrl>
@@ -33,18 +33,10 @@
         <file src="gtk-sharp/pango/pango-sharp.dll.config" target="build/net40/pango-sharp.dll.config" />
         
         <!-- native libs -->
-        <file src="nativelibs/x86/libatksharpglue-3.so" target="build/x86/libatksharpglue-3.so" />
-        <file src="nativelibs/x86/libgiosharpglue-3.so" target="build/x86/libgiosharpglue-3.so" />
-        <file src="nativelibs/x86/libgtksharpglue-3.so" target="build/x86/libgtksharpglue-3.so" />
-        <file src="nativelibs/x86/libopaque.so" target="build/x86/libopaque.so" />
-        <file src="nativelibs/x86/libpangosharpglue-3.so" target="build/x86/libpangosharpglue-3.so" />
-        <file src="nativelibs/x86/libvalobj.so" target="build/x86/libvalobj.so" />
-        <file src="nativelibs/x64/libatksharpglue-3.so" target="build/x64/libatksharpglue-3.so" />
-        <file src="nativelibs/x64/libgiosharpglue-3.so" target="build/x64/libgiosharpglue-3.so" />
-        <file src="nativelibs/x64/libgtksharpglue-3.so" target="build/x64/libgtksharpglue-3.so" />
-        <file src="nativelibs/x64/libopaque.so" target="build/x64/libopaque.so" />
-        <file src="nativelibs/x64/libpangosharpglue-3.so" target="build/x64/libpangosharpglue-3.so" />
-        <file src="nativelibs/x64/libvalobj.so" target="build/x64/libvalobj.so" />
+        <file src="gtk-sharp/atk/glue/.libs/libatksharpglue-3.so" target="build/x64/libatksharpglue-3.so" />
+        <file src="gtk-sharp/gio/glue/.libs/libgiosharpglue-3.so" target="build/x64/libgiosharpglue-3.so" />
+        <file src="gtk-sharp/gtk/glue/.libs/libgtksharpglue-3.so" target="build/x64/libgtksharpglue-3.so" />
+        <file src="gtk-sharp/pango/glue/.libs/libpangosharpglue-3.so" target="build/x64/libpangosharpglue-3.so" />
         
         <!-- targets file -->
         <file src="gtk-sharp3.targets" target="build/gtk-sharp3.targets" />
